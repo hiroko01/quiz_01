@@ -26,6 +26,15 @@ const quiz = [
       'ジーニー'
   ],
   correct: 'ゲーナ'
+  },{
+    question: 'チェブラーシカの親友のワニの働いている場所は？',
+    answers: [
+      '学校',
+      '遊園地',
+      '病院',
+      '動物園'
+  ],
+  correct: '動物園'
   }
 ];
 const quizLength = quiz.length;
@@ -61,7 +70,7 @@ const clickHandler = (e) => {
     setupQuiz();
   } else {
     //問題数がもうなければこちらを実行
-    window.alert('終了！あなたの正解数は' + score + '/' + quizLength + 'です！');
+    window.alert('終了！ あなたの正解数は' + quizLength + '問中' + score + '問です！！');
   }
 };
 
@@ -73,3 +82,4 @@ while (handlerIndex < buttonLength) {
   });
   handlerIndex++;
 }
+
