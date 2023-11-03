@@ -1,31 +1,31 @@
 const quiz = [
   {
-    question: 'ゲーム市場、最も売れたゲーム機は次のうちどれ？',
+    question: 'チェブラーシカはどこの国のキャラクターでしょうか？',
     answers: [
-      'スーパーファミコン',
-      'プレイステーション',
-      'ニンテンドースイッチ',
-      'ニンテンドーDS'
+      'アメリカ',
+      '日本',
+      'ロシア',
+      'フランス'
   ],
-  correct: 'ニンテンドーDS'
+  correct: 'ロシア'
   },{
-    question: '糸井重里が企画に関わった、任天堂の看板ゲームといえば？',
+    question: 'チェブラーシカが初めて登場した際に入っていたのは何のくだものの箱でしょうか？',
     answers: [
-      'MOTHER2',
-      'スーパーマリオブラザーズ3',
-      'スーパードンキーコング',
-      '星のカービィ'
+      'オレンジ',
+      'パイナップル',
+      'バナナ',
+      'りんご'
   ],
-  correct: 'MOTHER2'
+  correct: 'オレンジ'
   },{
-    question: 'ファイナルファンタジーⅣの主人公の名前は？',
+    question: 'チェブラーシカの親友のワニの名前は？',
     answers: [
-      'フリオニール',
-      'クラウド',
-      'ティーダ',
-      'セシル'
+      'イスマイル',
+      'ゲーナ',
+      'スティーブ',
+      'ジーニー'
   ],
-  correct: 'セシル'
+  correct: 'ゲーナ'
   }
 ];
 const quizLength = quiz.length;
@@ -63,12 +63,7 @@ const clickHandler = (e) => {
     //問題数がもうなければこちらを実行
     window.alert('終了！あなたの正解数は' + score + '/' + quizLength + 'です！');
   }
-
 };
-
-
-
-
 
 //ボタンをクリックしたら正誤判定
 let handlerIndex = 0;
@@ -78,30 +73,3 @@ while (handlerIndex < buttonLength) {
   });
   handlerIndex++;
 }
-
-
-
-
-
-
-// let handlerIndex = 0;
-// const buttonLength = $button.length;
-// while (handlerIndex < buttonLength) {
-//   $button[handlerIndex].addEventListener('click', (e) => {
-//     clickHandler(e);
-//   });
-//   handlerIndex++;
-// }
-
-// $button[0].addEventListener('click', (e) => {
-//   clickHandler(e);
-// });
-// $button[1].addEventListener('click', (e) => {
-//   clickHandler(e);
-// });
-// $button[2].addEventListener('click', (e) => {
-//   clickHandler(e);
-// });
-// $button[3].addEventListener('click', (e) => {
-//   clickHandler(e);
-// });
